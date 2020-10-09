@@ -1,125 +1,190 @@
-body {
-    width: 480px;
+
+main {
+    width: 100%;
+    margin: auto;
     margin-top: 10vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
 }
 
 div {
-    float: left;
+    position: relative;
 }
 
 #one {
-    height: 75px;
-    width: 480px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     background-color: rgb(215, 245, 215);
 }
 
 #two {
-    height: 150px;
-    width: 480px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     background-color: rgb(253, 232, 236);
 }
 
 #three {
-    height: 125px;
-    width: 480px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
     background-color: rgb(185, 230, 227);
 }
 
 #four {
-    height: 125px;
-    width: 480px;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
     background-color: rgb(250, 250, 221);
 }
 
 #five {
-    height: 250px;
-    width: 240px;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
     background-color: lightcyan;
 }
 
 #six {
-    height: 250px;
-    width: 240px;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
     background-color: rgb(190, 207, 218);
 }
 
 #seven {
-    height: 250px;
-    width: 240px;
+    grid-column: 1 / 2 ;
+    grid-row: 6 / 7;
     background-color: rgb(143, 167, 159);
 }
 
 #eight {
-    height: 250px;
-    width: 240px;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
     background-color: rgb(247, 231, 230);
 }
 
 #nine {
-    height: 80px;
-    width: 480px;
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
     background-color: rgb(233, 248, 247);
 }
 
-@media (min-width: 768px){
-    body{
-        width: 960px;
-        margin-top: 10vh;
-        margin-left: 20vh;
-        
 
+@media (min-width: 768px){
+
+    main {
+        width: 960px;
+        margin: auto;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 200px 190px 190px 190px 190px;
+        grid-template-rows: 100px 200px 250px 150px;
     }
 
     div{
-        float: left;
+        position: relative;
     }
 
     #one {
-        height: 100px;
-        width: 960px;
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        background-color: rgb(247, 226, 212);
     }
 
     #two {
-        height: 600px;
-        width: 200px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+        background-color: rgb(245, 215, 196);
 
     }
 
     #three {
-        height: 200px;
-        width: 380px;
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        background-color:rgb(243, 204, 180);
     }
 
     #four {
-        height: 200px;
-        width: 380px;
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+        background-color: rgb(235, 193, 168);
     }
 
     #five {
-        height: 250px;
-        width: 190px;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-color: rgb(228, 184, 158);
     }
 
     #six {
-        height: 250px;
-        width: 190px;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        background-color:rgb(224, 174, 145);
     }
 
     #seven {
-        height: 250px;
-        width: 190px;
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+        background-color: rgb(219, 166, 135);
     }
 
     #eight {
-        height: 250px;
-        width: 190px;
+        grid-column: 5 / 6;
+        grid-row: 3 / 4;
+        background-color:  rgb(207, 149, 115);
     }
 
     #nine {
-        height: 150px;
-        width: 760px;
+        grid-column: 2 / 6;
+        grid-row: 4 / 5;
+        background-color:rgb(204, 139, 102);
     }
 }
+
+ @media (min-width: 481px) and (max-width: 768px) {
+
+    main {
+        width: 100%;
+        margin: auto;
+        margin-top: 10vh;
+    }
+
+    div{
+        position: relative;
+    }
+
+    #one {
+        
+        background-color: rgb(29, 26, 26);
+    }
+
+    #two {
+        
+        background-color: rgb(39, 33, 33);
+    }
+
+    #three {
+        background-color: rgb(54, 44, 44);
+    }
+
+    #four {
+        background-color: rgb(77, 59, 59);
+    }
+
+    #five {
+        background-color: rgb(92, 66, 66);
+    }
+
+    #six {
+        background-color: rgb(107, 72, 72);
+    }
+
+    #seven {
+        background-color: rgb(133, 78, 78);
+    }
+
+    #eight {
+        background-color: rgb(153, 81, 81);
+    }
+
+    #nine {
+        background-color: rgb(187, 64, 64);
+    } 
+}     
